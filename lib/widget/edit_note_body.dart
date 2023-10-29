@@ -27,7 +27,7 @@ class EditNoteBody extends StatelessWidget {
             height: 16,
           ),
           CustomTextFeild(
-            hintText: 'Contant',
+            hintText: 'Content',
             maxLines: 6,
           ),
         ],
