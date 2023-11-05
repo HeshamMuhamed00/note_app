@@ -7,5 +7,4 @@ final class NotesInitial extends NotesState {}
 
 final class NotesLoading extends NotesState {}
 
-final class NotesSuccsess extends NotesState {
-}
+final class NotesSuccsess extends NotesState {}
