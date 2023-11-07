@@ -6,21 +6,23 @@ class ColorItem extends StatelessWidget {
   final Color color;
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 4),
-      child: isActive
-          ? CircleAvatar(
-              radius: 32,
-              backgroundColor: Colors.white,
-              child: CircleAvatar(
-                backgroundColor: color,
-                radius: 30,
-              ),
-            )
-          : CircleAvatar(
-              radius: 32,
+    return isActive
+        ? CircleAvatar(
+            radius: 32,
+            backgroundColor: Colors.greenAccent,
+            child: CircleAvatar(
               backgroundColor: color,
+              radius: 30,
+              child: const Icon(
+                Icons.check,
+                size: 35,
+                color: Colors.greenAccent,
+              ),
             ),
-    );
+          )
+        : CircleAvatar(
+            radius: 32,
+            backgroundColor: color,
+          );
   }
 }

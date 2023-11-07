@@ -32,10 +32,12 @@ class _NotesViewBodyState extends State<NotesViewBody> {
             text: 'Notes',
             icon: Icons.search,
           ),
-          SizedBox(
-            height: 20,
+          Expanded(
+            child: NotesListView(),
           ),
-          Expanded(child: NotesListView())
+          SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
